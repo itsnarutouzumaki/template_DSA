@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define jai_hind ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0)
+
+
+// for input
+vector<int> in(int n) {
+ vector<int> temp(n);
+for(int i=0;i<n;i++)
+cin>>temp[i];
+return temp;
+}
+
+// for output
+void out(vector<int> a) {
+ int n=a.size();
+for(int i=0;i<n;i++)
+cout<<a[i]<<" ";
+}
+
+void solve()
+{
+  jai_hind;
+}
+
+//main function
+int main()
+{
+  jai_hind;
+ int t;
+cin>>t;
+while(t--)
+{
+  solve();
+}
+}

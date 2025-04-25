@@ -1,0 +1,1 @@
+{"name":"Local: templet","url":"e:\\templet\\templet.cpp","tests":[{"id":1719497315167,"input":"5\n24 42\n-2 -1\n-1 -2\n0 -50\n15 0\n","output":""},{"id":1719497320451,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\templet\\templet.cpp","group":"local","local":true}

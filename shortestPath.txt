@@ -1,0 +1,29 @@
+int shortestPath(map<int, vector<pair<int, int>>>& graph, int &source, int &destination) {
+    int n = graph.size();
+    vector<int> dist(n, INT_MAX);
+    dist[source] = 0;
+    
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    pq.push({0, source});
+    
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        int d = pq.top().first;
+        pq.pop();
+        
+        if (u == destination) return dist[u];
+        
+        if (d > dist[u]) continue;
+        
+        for (const auto& edge : graph.at(u)) {
+            int v = edge.first;
+            int w = edge.second;
+            if (dist[u] + w < dist[v]) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    
+    return INT_MAX;
+   }
